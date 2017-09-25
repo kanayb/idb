@@ -14,8 +14,9 @@ const NavBar = (props) => {
         <Nav>
           <NavItem eventKey={1} href="#">Events</NavItem>
           <NavItem eventKey={2} href="#">Performers</NavItem>
-          <NavItem eventKey={2} href="#">Venues</NavItem>
-          <NavItem eventKey={2} href="#">Locations</NavItem>
+          <NavItem eventKey={3} href="#">Venues</NavItem>
+          <NavItem eventKey={4} href="#">Locations</NavItem>
+          <NavItem eventKey={5} href="#">About</NavItem>
         </Nav>
         <Navbar.Form pullRight>
           <FormGroup>
