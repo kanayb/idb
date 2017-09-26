@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Nav, Navbar, NavItem, NavDropdown, MenuItem, FormGroup, FormControl } from 'react-bootstrap';
+import { BrowserRouter as Router, Link } from 'react-router-dom'
 
 const NavBar = (props) => {
   return (
@@ -12,11 +13,31 @@ const NavBar = (props) => {
       </Navbar.Header>
       <Navbar.Collapse>
         <Nav>
-          <NavItem eventKey={1} href="#">Events</NavItem>
-          <NavItem eventKey={2} href="#">Performers</NavItem>
-          <NavItem eventKey={3} href="#">Venues</NavItem>
-          <NavItem eventKey={4} href="#">Locations</NavItem>
-          <NavItem eventKey={5} href="#">About</NavItem>
+          <NavItem key={1} eventKey={1} href="#">
+            <Link to={'/events'}>
+              Events
+            </Link>
+          </NavItem>
+          <NavItem key={2} eventKey={2} href="#">
+            <Link to={'/performers'}>
+              Performers
+            </Link>
+          </NavItem>
+          <NavItem key={3} eventKey={3} href="#">
+            <Link to={'/venues'}>
+              Venues
+            </Link>
+          </NavItem>
+          <NavItem key={4} eventKey={4} href="#">
+            <Link to={'/locations'}>
+              Locations
+            </Link>
+          </NavItem>
+          <NavItem key={5} eventKey={5} href="#">
+            <Link to={'/about'}>
+              About
+            </Link>
+          </NavItem>
         </Nav>
         <Navbar.Form pullRight>
           <FormGroup>

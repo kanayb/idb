@@ -4,7 +4,7 @@ import SplashCarousel from './components/splashcarousel'
 import About from './components/about'
 import Footer from './components/footer'
 import './App.css';
-import { BrowserRouter as Router } from 'react-router-dom'
+import { BrowserRouter as Router, Link, Route } from 'react-router-dom'
 
 class App extends Component {
   render() {
@@ -12,7 +12,8 @@ class App extends Component {
       <Router>
         <div className="App">
           <NavBar />
-          <About />
+          <Route exact={true} path ="/" component={ SplashCarousel } />
+          <Route path="/about" component={ About } />
           <Footer />
         </div>
       </Router>
