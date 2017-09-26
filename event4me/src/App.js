@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import splash from './assets/img/ACL.jpg'
 import NavBar from './components/navbar'
 import SplashCarousel from './components/splashcarousel'
+import About from './components/about'
 import Footer from './components/footer'
 import './App.css';
 import { BrowserRouter as Router } from 'react-router-dom'
@@ -13,12 +12,14 @@ class App extends Component {
       <Router>
         <div className="App">
           <NavBar />
-          <SplashCarousel />
+          <About />
           <Footer />
         </div>
       </Router>
     );
   }
 }
+
+// <SplashCarousel />
 
 export default App;
